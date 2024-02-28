@@ -22,10 +22,140 @@ functions:
   expressions: {}
   airflowFunctions: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/customer_orders:
+    name: customer_orders
+    schema:
+      providerType: Snowflake
+      fields:
+      - name: TOTAL_ORDERS
+        dataType:
+          type: Number
+      - name: TOTAL_AMOUNT
+        dataType:
+          type: Number
+      - name: FULL_NAME
+        dataType:
+          type: String
+      - name: CUSTOMER_ID
+        dataType:
+          type: Number
+    description: null
+    author: poojas+demo@prophecy.io
+    files:
+    - models/customer_orders.sql
+    - .prophecy/ide/models/customer_orders.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2024-02-28 10:05:10'
 sqlMacros: {}
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/POOJA_POOJA_ANALYTICS:
+    name: POOJA.POOJA_ANALYTICS
+    description: null
+    author: poojas+demo@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-02-28 10:05:22'
+    tables:
+    - name: CUSTOMERS
+      schema:
+        providerType: snowflake
+        fields:
+        - name: CUSTOMER_ID
+          dataType:
+            type: Number
+        - name: FIRST_NAME
+          dataType:
+            type: String
+        - name: LAST_NAME
+          dataType:
+            type: String
+        - name: FIRST_ORDER_DATE
+          dataType:
+            type: Date
+        - name: MOST_RECENT_ORDER_DATE
+          dataType:
+            type: Date
+        - name: NUMBER_OF_ORDERS
+          dataType:
+            type: Number
+      description: null
+      author: poojas+demo@prophecy.io
+      createdAt: '2024-02-28 10:05:22'
+    - name: STG_CUSTOMERS
+      schema:
+        providerType: snowflake
+        fields:
+        - name: CUSTOMER_ID
+          dataType:
+            type: Number
+        - name: FIRST_NAME
+          dataType:
+            type: String
+        - name: LAST_NAME
+          dataType:
+            type: String
+      description: null
+      author: poojas+demo@prophecy.io
+      createdAt: '2024-02-28 10:05:27'
+    - name: STG_ORDERS
+      schema:
+        providerType: snowflake
+        fields:
+        - name: ORDER_ID
+          dataType:
+            type: Number
+        - name: CUSTOMER_ID
+          dataType:
+            type: Number
+        - name: ORDER_DATE
+          dataType:
+            type: Date
+        - name: STATUS
+          dataType:
+            type: String
+      description: null
+      author: poojas+demo@prophecy.io
+      createdAt: '2024-02-28 10:05:31'
+  .prophecy/metadata/sqlsources/POOJA_STRIPE:
+    name: POOJA.STRIPE
+    description: null
+    author: poojas+demo@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-02-28 10:05:38'
+    tables:
+    - name: PAYMENT
+      schema:
+        providerType: snowflake
+        fields:
+        - name: ID
+          dataType:
+            type: Number
+        - name: ORDERID
+          dataType:
+            type: Number
+        - name: PAYMENTMETHOD
+          dataType:
+            type: String
+        - name: STATUS
+          dataType:
+            type: String
+        - name: AMOUNT
+          dataType:
+            type: Number
+        - name: CREATED
+          dataType:
+            type: Date
+        - name: _BATCHED_AT
+          dataType:
+            type: Timestamp
+      description: null
+      author: poojas+demo@prophecy.io
+      createdAt: '2024-02-28 10:05:38'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline

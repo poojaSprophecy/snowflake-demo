@@ -1,0 +1,83 @@
+---
+version: 2
+sources:
+- name: "POOJA.POOJA_ANALYTICS"
+  database: "POOJA"
+  schema: "POOJA_ANALYTICS"
+  config:
+    enabled: true
+  tables:
+  - name: "CUSTOMERS"
+    columns:
+    - name: "CUSTOMER_ID"
+      dataType:
+        type: "Number"
+    - name: "FIRST_NAME"
+      dataType:
+        type: "String"
+    - name: "LAST_NAME"
+      dataType:
+        type: "String"
+    - name: "FIRST_ORDER_DATE"
+      dataType:
+        type: "Date"
+    - name: "MOST_RECENT_ORDER_DATE"
+      dataType:
+        type: "Date"
+    - name: "NUMBER_OF_ORDERS"
+      dataType:
+        type: "Number"
+  - name: "STG_CUSTOMERS"
+    columns:
+    - name: "CUSTOMER_ID"
+      dataType:
+        type: "Number"
+    - name: "FIRST_NAME"
+      dataType:
+        type: "String"
+    - name: "LAST_NAME"
+      dataType:
+        type: "String"
+  - name: "STG_ORDERS"
+    columns:
+    - name: "ORDER_ID"
+      dataType:
+        type: "Number"
+    - name: "CUSTOMER_ID"
+      dataType:
+        type: "Number"
+    - name: "ORDER_DATE"
+      dataType:
+        type: "Date"
+    - name: "STATUS"
+      dataType:
+        type: "String"
+- name: "POOJA.STRIPE"
+  database: "POOJA"
+  schema: "STRIPE"
+  config:
+    enabled: true
+  tables:
+  - name: "PAYMENT"
+    columns:
+    - name: "ID"
+      dataType:
+        type: "Number"
+    - name: "ORDERID"
+      dataType:
+        type: "Number"
+    - name: "PAYMENTMETHOD"
+      dataType:
+        type: "String"
+    - name: "STATUS"
+      dataType:
+        type: "String"
+    - name: "AMOUNT"
+      dataType:
+        type: "Number"
+    - name: "CREATED"
+      dataType:
+        type: "Date"
+    - name: "_BATCHED_AT"
+      dataType:
+        type: "Timestamp"

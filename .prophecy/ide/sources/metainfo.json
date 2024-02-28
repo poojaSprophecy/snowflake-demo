@@ -1,0 +1,267 @@
+{
+  "name" : "SnowflakeDemo",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "snowflake",
+  "fabricId" : "9959",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Database",
+      "name" : "ANYA",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "ASHISH",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "BLACKROCK",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "CHETAN",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "DOCS_ANALYTICS",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "DOCS_RAW",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "FINANCIAL__ECONOMIC_ESSENTIALS",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "JAFFLE_SHOP",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "JASVINDER",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "JSR",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "KEERTHI",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "KISHORE",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "MACIEJ",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "MEITEST",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "NTONG",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "POOJA",
+      "children" : [ {
+        "type" : "Schema",
+        "name" : "DBT_PSINGHAL",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "INFORMATION_SCHEMA",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "JAFFLE_SHOP",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "POOJA_ANALYTICS",
+        "tables" : {
+          "CUSTOMERS" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "CUSTOMER_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "FIRST_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "LAST_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FIRST_ORDER_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "MOST_RECENT_ORDER_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "NUMBER_OF_ORDERS",
+              "dataType" : {
+                "type" : "Number"
+              }
+            } ]
+          },
+          "STG_CUSTOMERS" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "CUSTOMER_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "FIRST_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "LAST_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "STG_ORDERS" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "ORDER_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CUSTOMER_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "ORDER_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          }
+        }
+      }, {
+        "type" : "Schema",
+        "name" : "PUBLIC",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "STRIPE",
+        "tables" : {
+          "PAYMENT" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "ORDERID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "PAYMENTMETHOD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AMOUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "_BATCHED_AT",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          }
+        }
+      } ]
+    }, {
+      "type" : "Database",
+      "name" : "QA_DATABASE",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "RJ",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "SNOWFLAKE",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "SNOWFLAKE_SAMPLE_DATA",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "TESTING",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "\"jaffle_shop\"",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "\"qa_database\"",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "\"qa_database_lower_case_only\"",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "sourcesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}
