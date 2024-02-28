@@ -32,6 +32,29 @@ jobs:
     enabled: true
     createdAt: '2024-02-28 10:11:36'
     author: poojas+demo@prophecy.io
+  jobs/demo-composer:
+    name: demo-composer
+    description: ''
+    fabricUID: 9960
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0/10 * * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-02-28 10:27:05'
+    author: poojas+demo@prophecy.io
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
