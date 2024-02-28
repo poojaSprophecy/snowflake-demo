@@ -35,7 +35,12 @@
       "params" : { },
       "selected" : "default"
     },
-    "airflowFunctions" : [ ]
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false
+    }
   },
   "processes" : {
     "FgXp7qcjSIJ-jjpfBAYes$$Tp66mGpOvvxNLE0pwceRr" : {
