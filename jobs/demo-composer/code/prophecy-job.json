@@ -6,7 +6,7 @@
     "name" : "demo-composer",
     "dagName" : "poojas_demo_SnowflakeDemo_demo_composer",
     "schedule" : "0/10 * * * *",
-    "enabled" : true,
+    "enabled" : false,
     "alerting" : {
       "emails" : "",
       "onStart" : false,

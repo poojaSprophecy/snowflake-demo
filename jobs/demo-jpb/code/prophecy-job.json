@@ -6,7 +6,7 @@
     "name" : "demo-jpb",
     "dagName" : "AAwQAml_fDxTAFBO3lux7A_",
     "schedule" : "0/10 * * * *",
-    "enabled" : true,
+    "enabled" : false,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -23,6 +23,9 @@
       "id" : "9957",
       "name" : "airflow-demo",
       "trialStartDate" : 1709113048892
+    }, {
+      "id" : "9960",
+      "name" : "airflow-composer"
     } ],
     "catchup" : true,
     "tags" : [ ],
