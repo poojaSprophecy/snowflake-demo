@@ -1,6 +1,6 @@
 from poojas_demo_snowflakedemo_demo_composer.utils import *
 
-def DBT_0():
+def DBT_1():
     from datetime import timedelta
     from airflow.operators.bash import BashOperator
     envs = {}
@@ -13,14 +13,14 @@ def DBT_0():
         dbt_props_cmd = " --profile run_profile_snowflake"
 
     return BashOperator(
-        task_id = "DBT_0",
+        task_id = "DBT_1",
         bash_command = " && ".join(
           ["{} && cd $tmpDir/{}".format(
              (
                "set -euxo pipefail && tmpDir=`mktemp -d` && git clone "
                + "{} --branch {} --single-branch $tmpDir".format(
-                 "https://github.com/poojaSprophecy/snowflake-demo",
-                 "main"
+                 "https://github.com/poojaSprophecy/mrr-playbook",
+                 "master"
                )
              ),
              ""

@@ -6,7 +6,7 @@
     "name" : "demo-jpb",
     "dagName" : "AAwQAml_fDxTAFBO3lux7A_",
     "schedule" : "0/10 * * * *",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -27,9 +27,9 @@
       "id" : "9960",
       "name" : "airflow-composer"
     } ],
+    "endDate" : "2024-03-20",
     "catchup" : true,
     "tags" : [ ],
-    "endDate" : "2024-03-20",
     "scheduleTimeZone" : "UTC",
     "dagParams" : {
       "instances" : {
@@ -38,7 +38,12 @@
       "params" : { },
       "selected" : "default"
     },
-    "airflowFunctions" : [ ]
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false
+    }
   },
   "processes" : {
     "FKk5qEDBAg0TkkScSuw50$$-qmOOnKn0-FBUkXiQsAhv" : {

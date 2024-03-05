@@ -4,8 +4,8 @@ import pendulum
 from datetime import timedelta
 import airflow
 from airflow import DAG
-from airflow.decorators import task
 from airflow.models.param import Param
+from airflow.decorators import task
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from aawqaml_fdxtafbo3lux7a_.tasks import DBT_0
 PROPHECY_RELEASE_TAG = "__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__"

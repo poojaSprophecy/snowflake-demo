@@ -7,7 +7,7 @@ from airflow import DAG
 from airflow.models.param import Param
 from airflow.decorators import task
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
-from poojas_demo_snowflakedemo_demo_composer.tasks import DBT_0, Python_1
+from poojas_demo_snowflakedemo_demo_composer.tasks import DBT_1
 PROPHECY_RELEASE_TAG = "__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__"
 
 with DAG(
@@ -17,6 +17,4 @@ with DAG(
     start_date = pendulum.today('UTC'), 
     catchup = True
 ) as dag:
-    DBT_0_op = DBT_0()
-    Python_1_op = Python_1()
-    DBT_0_op >> Python_1_op
+    DBT_1_op = DBT_1()
