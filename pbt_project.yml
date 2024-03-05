@@ -1,6 +1,6 @@
 name: SnowflakeDemo
 description: ''
-version: 3.d
+version: '3.01'
 author: null
 language: sql
 buildSystem: ''
