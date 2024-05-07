@@ -90,21 +90,60 @@ sqlSources:
     - name: CUSTOMERS
       schema:
         providerType: snowflake
-        fields: []
+        fields:
+        - name: CUSTOMER_ID
+          dataType:
+            type: Number
+        - name: FIRST_NAME
+          dataType:
+            type: String
+        - name: LAST_NAME
+          dataType:
+            type: String
+        - name: FIRST_ORDER_DATE
+          dataType:
+            type: Date
+        - name: MOST_RECENT_ORDER_DATE
+          dataType:
+            type: Date
+        - name: NUMBER_OF_ORDERS
+          dataType:
+            type: Number
       description: null
       author: poojas+demo@prophecy.io
       createdAt: '2024-02-28 10:05:22'
     - name: STG_CUSTOMERS
       schema:
         providerType: snowflake
-        fields: []
+        fields:
+        - name: CUSTOMER_ID
+          dataType:
+            type: Number
+        - name: FIRST_NAME
+          dataType:
+            type: String
+        - name: LAST_NAME
+          dataType:
+            type: String
       description: null
       author: poojas+demo@prophecy.io
       createdAt: '2024-02-28 10:05:27'
     - name: STG_ORDERS
       schema:
         providerType: snowflake
-        fields: []
+        fields:
+        - name: ORDER_ID
+          dataType:
+            type: Number
+        - name: CUSTOMER_ID
+          dataType:
+            type: Number
+        - name: ORDER_DATE
+          dataType:
+            type: Date
+        - name: STATUS
+          dataType:
+            type: String
       description: null
       author: poojas+demo@prophecy.io
       createdAt: '2024-02-28 10:05:31'
@@ -119,7 +158,28 @@ sqlSources:
     - name: PAYMENT
       schema:
         providerType: snowflake
-        fields: []
+        fields:
+        - name: ID
+          dataType:
+            type: Number
+        - name: ORDERID
+          dataType:
+            type: Number
+        - name: PAYMENTMETHOD
+          dataType:
+            type: String
+        - name: STATUS
+          dataType:
+            type: String
+        - name: AMOUNT
+          dataType:
+            type: Number
+        - name: CREATED
+          dataType:
+            type: Date
+        - name: _BATCHED_AT
+          dataType:
+            type: Timestamp
       description: null
       author: poojas+demo@prophecy.io
       createdAt: '2024-02-28 10:05:38'
