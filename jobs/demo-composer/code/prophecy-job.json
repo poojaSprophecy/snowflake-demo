@@ -19,12 +19,18 @@
       "do_xcom_push" : true
     },
     "availableFabrics" : [ {
-      "id" : "9957",
-      "name" : "airflow-demo",
-      "trialStartDate" : 1709113048892
-    }, {
       "id" : "9960",
       "name" : "airflow-composer"
+    }, {
+      "id" : "10852",
+      "name" : "demo-airflow"
+    }, {
+      "id" : "11812",
+      "name" : "MWAA"
+    }, {
+      "id" : "12117",
+      "name" : "Prophecy-Managed-Airflow",
+      "trialStartDate" : 1715007924982
     } ],
     "catchup" : true,
     "scheduleTimeZone" : "UTC",
@@ -39,13 +45,14 @@
     "dynamicPipelineStatus" : {
       "databricks" : false,
       "dataproc" : false,
-      "emr" : false
+      "emr" : false,
+      "onprem" : false
     }
   },
   "processes" : {
     "wXJjlMAhx2ENLAYvILkIW$$aQkAq04LD9Usnf7UyTlk6" : {
       "id" : "wXJjlMAhx2ENLAYvILkIW$$aQkAq04LD9Usnf7UyTlk6",
-      "component" : "DBT",
+      "component" : "Model",
       "metadata" : {
         "label" : "DBT_1",
         "slug" : "DBT_1",
@@ -86,7 +93,7 @@
         "runSnapshots" : false,
         "noPrint" : null,
         "quiet" : null,
-        "projectId" : "20546",
+        "projectId" : "20506",
         "runMode" : "project",
         "runOnlyModel" : false,
         "favorState" : null,
@@ -120,25 +127,10 @@
         "threads" : null,
         "warnError" : null,
         "currentProjectModels" : [ {
-          "label" : "util_months",
-          "value" : "util_months",
-          "id" : "20546/.prophecy/metadata/sqlmodels/util_months",
-          "name" : "util_months"
-        }, {
-          "label" : "mrr",
-          "value" : "mrr",
-          "id" : "20546/.prophecy/metadata/sqlmodels/mrr",
-          "name" : "mrr"
-        }, {
-          "label" : "customer_revenue_by_month",
-          "value" : "customer_revenue_by_month",
-          "id" : "20546/.prophecy/metadata/sqlmodels/customer_revenue_by_month",
-          "name" : "customer_revenue_by_month"
-        }, {
-          "label" : "customer_churn_month",
-          "value" : "customer_churn_month",
-          "id" : "20546/.prophecy/metadata/sqlmodels/customer_churn_month",
-          "name" : "customer_churn_month"
+          "label" : "customer_orders",
+          "value" : "customer_orders",
+          "id" : "20506/.prophecy/metadata/sqlmodels/customer_orders",
+          "name" : "customer_orders"
         } ],
         "profilesDir" : null,
         "taskId" : null,

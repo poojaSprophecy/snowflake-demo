@@ -19,7 +19,7 @@ def DBT_1():
              (
                "set -euxo pipefail && tmpDir=`mktemp -d` && git clone "
                + "{} --branch {} --single-branch $tmpDir".format(
-                 "https://github.com/poojaSprophecy/mrr-playbook",
+                 "https://github.com/poojaSprophecy/snowflake-demo",
                  "master"
                )
              ),

@@ -94,7 +94,11 @@ sqlModels:
     sqlDependencies:
       models: []
       datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
     createdAt: '2024-02-28 10:05:10'
+sqlSnapshots: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources:
