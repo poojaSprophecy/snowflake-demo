@@ -1,0 +1,44 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "12168",
+    "jobId" : "jobs/demo-job",
+    "name" : "demo-job",
+    "dagName" : "poojas_airflowdemo_SnowflakeDemo_demo_job",
+    "schedule" : "None",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ {
+      "id" : "12168",
+      "name" : "composer"
+    } ],
+    "catchup" : true,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : { },
+  "connections" : [ ]
+}

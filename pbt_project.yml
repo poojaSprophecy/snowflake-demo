@@ -9,38 +9,15 @@ pipelines: {}
 datasets: {}
 templates: {}
 jobs:
-  jobs/demo-jpb:
-    name: demo-jpb
+  jobs/demo-job:
+    name: demo-job
     description: ''
-    fabricUID: 9957
-    scheduler:
-      Prophecy: {}
-    cloudProvider: null
-    jobSize: null
-    scheduleCron: 0/10 * * * *
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines: []
-    jobClusterMode:
-      clusterMode:
-        Multi: {}
-      clusterId: null
-    enabled: true
-    createdAt: '2024-02-28 10:11:36'
-    author: poojas+demo@prophecy.io
-  jobs/demo-composer:
-    name: demo-composer
-    description: ''
-    fabricUID: 9960
+    fabricUID: 12168
     scheduler:
       Composer: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: 0/10 * * * *
+    scheduleCron: None
     timeout: null
     alerting:
       emails: ''
@@ -50,11 +27,11 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Multi: {}
+        Single: {}
       clusterId: null
-    enabled: false
-    createdAt: '2024-02-28 10:27:05'
-    author: poojas+demo@prophecy.io
+    enabled: null
+    createdAt: '2024-05-07 14:53:23'
+    author: poojas+airflowdemo@prophecy.io
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -113,21 +90,60 @@ sqlSources:
     - name: CUSTOMERS
       schema:
         providerType: snowflake
-        fields: []
+        fields:
+        - name: CUSTOMER_ID
+          dataType:
+            type: Number
+        - name: FIRST_NAME
+          dataType:
+            type: String
+        - name: LAST_NAME
+          dataType:
+            type: String
+        - name: FIRST_ORDER_DATE
+          dataType:
+            type: Date
+        - name: MOST_RECENT_ORDER_DATE
+          dataType:
+            type: Date
+        - name: NUMBER_OF_ORDERS
+          dataType:
+            type: Number
       description: null
       author: poojas+demo@prophecy.io
       createdAt: '2024-02-28 10:05:22'
     - name: STG_CUSTOMERS
       schema:
         providerType: snowflake
-        fields: []
+        fields:
+        - name: CUSTOMER_ID
+          dataType:
+            type: Number
+        - name: FIRST_NAME
+          dataType:
+            type: String
+        - name: LAST_NAME
+          dataType:
+            type: String
       description: null
       author: poojas+demo@prophecy.io
       createdAt: '2024-02-28 10:05:27'
     - name: STG_ORDERS
       schema:
         providerType: snowflake
-        fields: []
+        fields:
+        - name: ORDER_ID
+          dataType:
+            type: Number
+        - name: CUSTOMER_ID
+          dataType:
+            type: Number
+        - name: ORDER_DATE
+          dataType:
+            type: Date
+        - name: STATUS
+          dataType:
+            type: String
       description: null
       author: poojas+demo@prophecy.io
       createdAt: '2024-02-28 10:05:31'
@@ -142,7 +158,28 @@ sqlSources:
     - name: PAYMENT
       schema:
         providerType: snowflake
-        fields: []
+        fields:
+        - name: ID
+          dataType:
+            type: Number
+        - name: ORDERID
+          dataType:
+            type: Number
+        - name: PAYMENTMETHOD
+          dataType:
+            type: String
+        - name: STATUS
+          dataType:
+            type: String
+        - name: AMOUNT
+          dataType:
+            type: Number
+        - name: CREATED
+          dataType:
+            type: Date
+        - name: _BATCHED_AT
+          dataType:
+            type: Timestamp
       description: null
       author: poojas+demo@prophecy.io
       createdAt: '2024-02-28 10:05:38'
