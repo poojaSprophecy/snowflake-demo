@@ -5,8 +5,8 @@
     "jobId" : "jobs/demo-job",
     "name" : "demo-job",
     "dagName" : "poojas_airflowdemo_SnowflakeDemo_demo_job",
-    "schedule" : "None",
-    "enabled" : false,
+    "schedule" : "0 0/1 * * *",
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -22,7 +22,8 @@
       "id" : "12168",
       "name" : "composer"
     } ],
-    "catchup" : true,
+    "catchup" : false,
+    "tags" : [ ],
     "scheduleTimeZone" : "UTC",
     "dagParams" : {
       "instances" : {
@@ -39,6 +40,173 @@
       "onprem" : false
     }
   },
-  "processes" : { },
-  "connections" : [ ]
+  "processes" : {
+    "WJIOEQD_ZRVu4qjogiUYh$$ZZvK_Skt204hFwtWWd-da" : {
+      "id" : "WJIOEQD_ZRVu4qjogiUYh$$ZZvK_Skt204hFwtWWd-da",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -320,
+        "y" : -140
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OMuAiUj5hf47hu3HHD6Y6$$vvuU0IrnwgFRjG21sou8p",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "Puxx8v4ndZGvrrvixI3eG$$a2SBUla_eiGLQNphHnf96",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : false,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : true,
+        "vars" : null,
+        "runSnapshots" : false,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "24273",
+        "runMode" : "project",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "snapshot" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : false,
+        "printerWidth" : null,
+        "sqlFabricId" : "12167",
+        "gitEntityValue" : "dev",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : false,
+        "loadingSnapshots" : false,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "customer_orders",
+          "value" : "customer_orders",
+          "id" : "24273/.prophecy/metadata/sqlmodels/customer_orders",
+          "name" : "customer_orders"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "YxTqoMBRi0zQXksTpsrcB$$LLnJZvgjARssbUSpkhbKM" : {
+      "id" : "YxTqoMBRi0zQXksTpsrcB$$LLnJZvgjARssbUSpkhbKM",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "Email_1",
+        "slug" : "Email_1",
+        "x" : -500,
+        "y" : -140
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "yKFxjDqSE6APv3lxlblPW$$T6D12ytTtRm0Zowm1gZbJ",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "hIkWcV___UArhvYbh96Zn$$f7D5luLnMWnwkLgnoWmNe",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "emailCC" : null,
+        "subject" : "Starting job",
+        "emailBCC" : null,
+        "emailTo" : "poojas@prophecy.io",
+        "emailConnectionId" : "email_default",
+        "htmlContent" : "Stating job at {{execution_date}}",
+        "taskId" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "bOJX-_dVKvKx3gpdAv0sO$$Z7Sg1MaG9KlouRffRLNU0" : {
+      "id" : "bOJX-_dVKvKx3gpdAv0sO$$Z7Sg1MaG9KlouRffRLNU0",
+      "component" : "Python",
+      "metadata" : {
+        "label" : "Python_1",
+        "slug" : "Python_1",
+        "x" : -160,
+        "y" : -140
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "YODsllgtiNLJW81c8hnhN$$jf11M54NQOwNTJS5t3fjw",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "qgzsR5ilr3t6AgPLcl8o_$$xjRrvfbwZjxwE1_54ZFkY",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "templatesExts" : null,
+        "code" : "def abc(): \n    print(\"Hello_world\")",
+        "valueInLogs" : true,
+        "opArgs" : null,
+        "templatesDict" : null,
+        "taskId" : null,
+        "opKwargs" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ {
+    "id" : "hU2npvkbRuMs_ftqAZUFP$$W0wzQlkP7uFyz7N-szGou",
+    "source" : "YxTqoMBRi0zQXksTpsrcB$$LLnJZvgjARssbUSpkhbKM",
+    "target" : "WJIOEQD_ZRVu4qjogiUYh$$ZZvK_Skt204hFwtWWd-da",
+    "sourcePort" : "hIkWcV___UArhvYbh96Zn$$f7D5luLnMWnwkLgnoWmNe",
+    "targetPort" : "OMuAiUj5hf47hu3HHD6Y6$$vvuU0IrnwgFRjG21sou8p"
+  }, {
+    "id" : "7d9tBqIzqp3gX-7sn_oYr",
+    "source" : "WJIOEQD_ZRVu4qjogiUYh$$ZZvK_Skt204hFwtWWd-da",
+    "target" : "bOJX-_dVKvKx3gpdAv0sO$$Z7Sg1MaG9KlouRffRLNU0",
+    "sourcePort" : "Puxx8v4ndZGvrrvixI3eG$$a2SBUla_eiGLQNphHnf96",
+    "targetPort" : "YODsllgtiNLJW81c8hnhN$$jf11M54NQOwNTJS5t3fjw"
+  } ]
 }

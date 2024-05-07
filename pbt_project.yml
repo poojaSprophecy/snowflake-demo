@@ -17,7 +17,7 @@ jobs:
       Composer: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: None
+    scheduleCron: 0 0/1 * * *
     timeout: null
     alerting:
       emails: ''
@@ -27,9 +27,9 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: true
     createdAt: '2024-05-07 14:53:23'
     author: poojas+airflowdemo@prophecy.io
 gemContainer:
