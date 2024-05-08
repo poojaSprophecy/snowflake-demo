@@ -6,7 +6,7 @@
     "name" : "demo-job",
     "dagName" : "poojas_airflowdemo_SnowflakeDemo_demo_job",
     "schedule" : "0 0/1 * * *",
-    "enabled" : true,
+    "enabled" : false,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
