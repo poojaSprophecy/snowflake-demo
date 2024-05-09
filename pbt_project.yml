@@ -32,6 +32,29 @@ jobs:
     enabled: false
     createdAt: '2024-05-07 14:53:23'
     author: poojas+airflowdemo@prophecy.io
+  jobs/pm-airflow-job:
+    name: pm-airflow-job
+    description: ''
+    fabricUID: 12231
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0/5 * * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2024-05-09 08:23:39'
+    author: poojas+airflowdemo@prophecy.io
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''

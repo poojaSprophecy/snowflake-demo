@@ -1,0 +1,142 @@
+{
+  "metainfo" : {
+    "type" : "Prophecy",
+    "fabricId" : "12231",
+    "jobId" : "jobs/pm-airflow-job",
+    "name" : "pm-airflow-job",
+    "dagName" : "PDMjoE0pCHmMxJAR_Pz9mw_",
+    "schedule" : "0/5 * * * *",
+    "enabled" : true,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "pool" : "5S_xL1fu",
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ {
+      "id" : "12168",
+      "name" : "composer"
+    }, {
+      "id" : "12231",
+      "name" : "Prophecy-Managed-Airflow",
+      "trialStartDate" : 1715242900600
+    } ],
+    "endDate" : "2024-05-30",
+    "catchup" : false,
+    "tags" : [ ],
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : {
+    "rapVPfTDdpEHZkfwFE_mA$$Fm1JoHd38igrXUQi0p7vR" : {
+      "id" : "rapVPfTDdpEHZkfwFE_mA$$Fm1JoHd38igrXUQi0p7vR",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -300,
+        "y" : -140
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HBlbd7TCyVBWfNLqBIIud$$t_CUXAxCkXoY9vPT2oo8f",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "WuLu98LJ7QeSlB0oLXQBz$$D2ZefVpNwgoulj9zT9JXJ",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : false,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : true,
+        "vars" : null,
+        "runSnapshots" : false,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "24273",
+        "runMode" : "project",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "snapshot" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : false,
+        "printerWidth" : null,
+        "sqlFabricId" : "12167",
+        "gitEntityValue" : "dev",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : false,
+        "loadingSnapshots" : false,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "customer_orders",
+          "value" : "customer_orders",
+          "id" : "24273/.prophecy/metadata/sqlmodels/customer_orders",
+          "name" : "customer_orders"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ ]
+}

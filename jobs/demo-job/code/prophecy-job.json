@@ -41,6 +41,38 @@
     }
   },
   "processes" : {
+    "YxTqoMBRi0zQXksTpsrcB$$LLnJZvgjARssbUSpkhbKM" : {
+      "id" : "YxTqoMBRi0zQXksTpsrcB$$LLnJZvgjARssbUSpkhbKM",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "Email_1",
+        "slug" : "Email_1",
+        "x" : -500,
+        "y" : -140
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "yKFxjDqSE6APv3lxlblPW$$T6D12ytTtRm0Zowm1gZbJ",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "hIkWcV___UArhvYbh96Zn$$f7D5luLnMWnwkLgnoWmNe",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "emailCC" : null,
+        "subject" : "Starting job",
+        "emailBCC" : null,
+        "emailTo" : "poojas@prophecy.io",
+        "emailConnectionId" : "email_default",
+        "htmlContent" : "Stating job at {{execution_date}}",
+        "taskId" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
     "WJIOEQD_ZRVu4qjogiUYh$$ZZvK_Skt204hFwtWWd-da" : {
       "id" : "WJIOEQD_ZRVu4qjogiUYh$$ZZvK_Skt204hFwtWWd-da",
       "component" : "Model",
@@ -131,38 +163,6 @@
       "connections" : [ ],
       "processes" : { }
     },
-    "YxTqoMBRi0zQXksTpsrcB$$LLnJZvgjARssbUSpkhbKM" : {
-      "id" : "YxTqoMBRi0zQXksTpsrcB$$LLnJZvgjARssbUSpkhbKM",
-      "component" : "Email",
-      "metadata" : {
-        "label" : "Email_1",
-        "slug" : "Email_1",
-        "x" : -500,
-        "y" : -140
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "yKFxjDqSE6APv3lxlblPW$$T6D12ytTtRm0Zowm1gZbJ",
-          "slug" : ""
-        } ],
-        "outputs" : [ {
-          "id" : "hIkWcV___UArhvYbh96Zn$$f7D5luLnMWnwkLgnoWmNe",
-          "slug" : ""
-        } ]
-      },
-      "settings" : { },
-      "properties" : {
-        "emailCC" : null,
-        "subject" : "Starting job",
-        "emailBCC" : null,
-        "emailTo" : "poojas@prophecy.io",
-        "emailConnectionId" : "email_default",
-        "htmlContent" : "Stating job at {{execution_date}}",
-        "taskId" : null
-      },
-      "connections" : [ ],
-      "processes" : { }
-    },
     "bOJX-_dVKvKx3gpdAv0sO$$Z7Sg1MaG9KlouRffRLNU0" : {
       "id" : "bOJX-_dVKvKx3gpdAv0sO$$Z7Sg1MaG9KlouRffRLNU0",
       "component" : "Python",
@@ -186,6 +186,98 @@
       "properties" : {
         "templatesExts" : null,
         "code" : "def abc(): \n    print(\"Hello_world\")",
+        "valueInLogs" : true,
+        "opArgs" : null,
+        "templatesDict" : null,
+        "taskId" : null,
+        "opKwargs" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "guuiotR5hnmgShDlralRQ$$EoWVFVSVQ1126quuJxrzs" : {
+      "id" : "guuiotR5hnmgShDlralRQ$$EoWVFVSVQ1126quuJxrzs",
+      "component" : "SnowflakeSQL",
+      "metadata" : {
+        "label" : "SnowflakeSQL_1",
+        "slug" : "SnowflakeSQL_1",
+        "x" : -960,
+        "y" : -420
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pSm_hr6b92wWkZPe1gvj8$$89OP2HhGFD2ndGL65QT8c",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "94FHIlJbxOlZqxxGV7VfK$$Y37J-ObiLLtroHARiziE3",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "connId" : "",
+        "warehouseName" : "",
+        "code" : "",
+        "language" : "sql",
+        "schemaName" : "",
+        "databaseName" : "",
+        "taskId" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "WU9_YtcJH-gD4fQMTQ9uL$$oC2sbMrPZt6MZy9DhUOXW" : {
+      "id" : "WU9_YtcJH-gD4fQMTQ9uL$$oC2sbMrPZt6MZy9DhUOXW",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : -680,
+        "y" : -420
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AYYoOcOKSpVucthZHod12$$f7FcOt0E_ogK0DFyg9IPd",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "6ESm475u4elA40cz33vnt$$DWaXdKqrms-Oh0E2ZHr9s",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "code" : "",
+        "language" : "bash",
+        "taskId" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "IWa5sc7TFswnIsnMH7TgE$$EsoBimieWt-SxLb5aR-YZ" : {
+      "id" : "IWa5sc7TFswnIsnMH7TgE$$EsoBimieWt-SxLb5aR-YZ",
+      "component" : "Python",
+      "metadata" : {
+        "label" : "Python_2",
+        "slug" : "Python_2",
+        "x" : -820,
+        "y" : -420
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "BWH7V9bVjUIi_QNu9eD58$$tP4zlKxqBA5psr4nQnvmD",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "J1G2bo1l0QZq8uAxxGwW0$$ZSUSJe-yndvzKXdbR5qm2",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "templatesExts" : null,
+        "code" : "",
         "valueInLogs" : true,
         "opArgs" : null,
         "templatesDict" : null,
