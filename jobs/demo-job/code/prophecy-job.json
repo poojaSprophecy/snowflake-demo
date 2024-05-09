@@ -21,6 +21,10 @@
     "availableFabrics" : [ {
       "id" : "12168",
       "name" : "composer"
+    }, {
+      "id" : "12231",
+      "name" : "Prophecy-Managed-Airflow",
+      "trialStartDate" : 1715242900600
     } ],
     "catchup" : false,
     "tags" : [ ],

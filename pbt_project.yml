@@ -52,7 +52,7 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: true
+    enabled: false
     createdAt: '2024-05-09 08:23:39'
     author: poojas+airflowdemo@prophecy.io
 gemContainer:

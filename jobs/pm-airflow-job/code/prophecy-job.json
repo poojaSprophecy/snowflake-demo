@@ -6,7 +6,7 @@
     "name" : "pm-airflow-job",
     "dagName" : "PDMjoE0pCHmMxJAR_Pz9mw_",
     "schedule" : "0/5 * * * *",
-    "enabled" : true,
+    "enabled" : false,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
